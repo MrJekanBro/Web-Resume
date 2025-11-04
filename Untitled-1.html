@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Єфімов Євген</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(120deg, rgb(200, 255, 225), rgb(200, 255, 180));
+      color: rgb(50, 50, 50);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: rgb(0, 150, 100);
+      color: rgb(255, 255, 255);
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: rgb(250, 250, 250);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      scroll-margin-top: 50px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    .profile1 {
+      text-align: center;
+    }
+
+    .profile img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 5px solid rgb(0, 150, 75);
+      object-fit: cover;
+    }
+
+    h1 {
+      display: inline-block;    
+    }
+
+    h2 {
+      border-bottom: 2px solid rgb(0, 120, 100);
+      display: inline-block;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid rgb(80, 200, 100);
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background: rgb(100, 250, 130);
+    }
+
+    .skill {
+      margin: 15px 0;
+    }
+
+    .bar {
+      background: rgb(150, 150, 150);
+      overflow: hidden;
+      height: 20px;
+      border-radius: 10px;
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, rgb(100, 250, 150), rgb(100, 250, 100));
+      border-radius: 10px;
+    }
+
+    .social a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: rgb(0, 120, 100);
+      font-weight: bold;
+    }
+
+    .social a:hover {
+      color: rgb(0, 80, 65);
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgb(0, 80, 65);
+      color: rgb(255, 255, 255);
+      margin-top: 40px;
+    }
+
+    img:hover {
+      transform: scale(1.2);
+      transition: 0.3s;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#about">Про мене</a>
+      <a href="#educate">Освіта</a>
+      <a href="#languages">Знання мов</a>
+      <a href="#skills">Навички</a>
+      <a href="#experience">Робота</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+  </header>
+
+  <section id="about" class="profile">
+    <img src="1.jpg" alt="Фото профілю">
+    <h1>Єфімов Євген <br>Олександрович</h1>
+  </section>
+
+  <section id="about" class="profile1">
+    <p><strong>Дата народження:</strong> 8 грудня 2005 року</p>
+    <p>   Студент, цікавлюся сучасними технологіями, 3D-моделюванням i створенням інтерактивних проєктів. 
+      <br>Відзначаюся творчим підходом до роботи, уважністю до деталей та прагненням до професійного розвитку.
+      <br>Розвиваю навички y сфері комп’ютерної графіки та програмування.
+    </p>
+  </section>
+
+
+
+  <section id="educate">
+    <h2>Освіта</h2>
+    <table>
+      <tr>
+        <th>Період</th>
+        <th>Рівень освіти</th>
+        <th>Навчальний заклад</th>
+      </tr>
+      <tr>
+        <td>2012 - 2021</td>
+        <td>Базова середня освіта</td>
+        <td>Горностаївський ЗДПЗСО.</td>
+      </tr>
+      <tr>
+        <td>2021 - 2023</td>
+        <td>Повна загальна середня освіта</td>
+        <td>Любимівський ЗПЗСО.</td>
+      </tr>
+      </tr>
+        <td>2023 - теперішній час</td>
+        <td>Вища освіта (бакалавр)</td>
+        <td>Херсонський державний yнiвepcитeт, спеціальність “Комп’ютерні науки”</td>
+      </tr>
+    </table>
+  </section>
+
+<section id="languages">
+  <h2>Знання мов</h2>
+
+  <div class="skill">
+    <p>Українська - рідна</p>
+    <div class="bar"><span style="width: 99.5%;"></span></div>
+  </div>
+
+  <div class="skill">
+    <p>Російська 💩</p>
+    <div class="bar"><span style="width: 41%;"></span></div>
+  </div>
+
+  <div class="skill">
+    <p>Англійська</p>
+    <div class="bar"><span style="width: 30%;"></span></div>
+  </div>
+
+  <div class="skill">
+    <p>Польська</p>
+    <div class="bar"><span style="width: 5%;"></span></div>
+  </div>
+</section>
+
+  <section id="skills">
+    <h2>Навички</h2>
+
+    <div class="skill">
+      <p>HTML</p>
+      <div class="bar"><span style="width: 41%;"></span></div>
+    </div>
+
+    <div class="skill">
+      <p>CSS</p>
+      <div class="bar"><span style="width: 35%;"></span></div>
+    </div>
+
+    <div class="skill">
+      <p>JavaScript</p>
+      <div class="bar"><span style="width: 30%;"></span></div>
+    </div>
+
+    <div class="skill">
+      <p>PHP</p>
+      <div class="bar"><span style="width: 37%;"></span></div>
+    </div>
+
+  <div class="skill">
+      <p>Python</p>
+      <div class="bar"><span style="width: 50%;"></span></div>
+    </div>
+
+    <div class="skill">
+      <p>C</p>
+      <div class="bar"><span style="width: 45%;"></span></div>
+    </div>
+
+    <div class="skill">
+      <p>C++</p>
+      <div class="bar"><span style="width: 45%;"></span></div>
+    </div>
+
+    <div class="skill">
+      <p>C#</p>
+      <div class="bar"><span style="width: 47%;"></span></div>
+    </div>
+    
+    <div class="skill">
+      <p>Unity</p>
+      <div class="bar"><span style="width: 39%;"></span></div>
+    </div>
+
+    <div class="skill">
+      <p>Unreal Engine</p>
+      <div class="bar"><span style="width: 25%;"></span></div>
+    </div>
+
+    <div class="skill">
+      <p>Blender 3D</p>
+      <div class="bar"><span style="width: 75%;"></span></div>
+    </div>
+
+  <section id="experience">
+    <h2>Досвід роботи</h2>
+    <p>Фріланс 3D Моделювання та друк моделі/деталі на 3D принтері</p>
+    <p>Непрацевлаштований</p>
+  </section>
+
+  <section id="contacts">
+    <h2>Контакти</h2>
+    <p>Місце проживання: Україна, Херсонська область</p>
+    <p>Телефон: +380660232788, +380689715402</p>
+    <p>Email: <a href="mailto:jekayefimov@gmail1.com">jekayefimov@gmail1.com</a></p>
+    <div class="social">
+      <h3><br>Соціальні мережі</h3>
+      <a href="https://t.me/Prosto_J_E_K_A" target="_blank">Telegram</a>
+      <a href="https://www.instagram.com/yefimovjeka?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+</body>
+</html>
