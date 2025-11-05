@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Єфімов Євген</title>
+  <link rel="icon" href="1.jpg" type="image/jpeg">
+
   <style>
     body {
       font-family: "Segoe UI", Arial, sans-serif;
@@ -317,7 +319,7 @@
         });
       }
     </script>
-    
+
     <div class="social">
       <h3><br>Соціальні мережі</h3>
       <a href="https://t.me/Prosto_J_E_K_A" target="_blank">Telegram</a>
@@ -325,6 +327,42 @@
       <a href="https://github.com/MrJekanBro" target="_blank">GitHub</a>      
     </div>
   </section>
- 
+
+
+  
+<button id="topBtn" onclick="scrollToTop()">⬆️</button>
+<style>
+  #topBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: rgb(0,150,100);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  #topBtn:hover {
+    background: rgb(0,120,80);
+  }
+</style>
+
+<script>
+  const btn = document.getElementById("topBtn");
+  window.onscroll = function() {
+    if (document.documentElement.scrollTop > 300) btn.style.display = "block";
+    else btn.style.display = "none";
+  };
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script>
+
 </body>
 </html>
